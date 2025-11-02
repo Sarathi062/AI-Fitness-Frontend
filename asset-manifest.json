@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AI-Fitness-Frontend/static/css/main.4a87e951.css",
+    "main.js": "/AI-Fitness-Frontend/static/js/main.d1dfe1e2.js",
+    "static/js/453.d7446e4a.chunk.js": "/AI-Fitness-Frontend/static/js/453.d7446e4a.chunk.js",
+    "index.html": "/AI-Fitness-Frontend/index.html",
+    "main.4a87e951.css.map": "/AI-Fitness-Frontend/static/css/main.4a87e951.css.map",
+    "main.d1dfe1e2.js.map": "/AI-Fitness-Frontend/static/js/main.d1dfe1e2.js.map",
+    "453.d7446e4a.chunk.js.map": "/AI-Fitness-Frontend/static/js/453.d7446e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a87e951.css",
+    "static/js/main.d1dfe1e2.js"
+  ]
+}
