@@ -25,7 +25,7 @@ function App() {
   const generatePlan = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/generate-plan', {
+      const response = await fetch('https://ai-fitness-backend-raqo.onrender.com//api/generate-plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -48,7 +48,7 @@ function App() {
   const generateImage = async (itemName, type) => {
     setImageLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/generate-image', {
+      const response = await fetch('https://ai-fitness-backend-raqo.onrender.com//api/generate-image', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ itemName, type })
@@ -71,7 +71,7 @@ function App() {
                        section === 'diet' ? JSON.stringify(generatedPlan.dietPlan) :
                        JSON.stringify(generatedPlan);
 
-      const response = await fetch('http://localhost:5000/api/text-to-speech', {
+      const response = await fetch('https://ai-fitness-backend-raqo.onrender.com//api/text-to-speech', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: textToRead })
@@ -92,7 +92,7 @@ function App() {
 
   const exportAsPDF = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/export-pdf', {
+      const response = await fetch('https://ai-fitness-backend-raqo.onrender.com//api/export-pdf', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(generatedPlan)
@@ -113,7 +113,7 @@ function App() {
 
   const getDailyMotivation = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/motivation');
+      const response = await fetch('https://ai-fitness-backend-raqo.onrender.com//api/motivation');
       const data = await response.json();
       setMotivationQuote(data.quote);
     } catch (error) {
